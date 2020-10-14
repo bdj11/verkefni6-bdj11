@@ -1,0 +1,13 @@
+// Sækja config
+@import './config';
+
+// Hér skal nota scss @for til að ítra út klösum fyrir grid
+
+@mixin columns($col: 1) {
+    width: ($col / 12 * 100) * 1%;
+    padding-right: $gutter;
+    padding-left: $gutter; 
+}
+.col {
+    @include columns(12);
+}
